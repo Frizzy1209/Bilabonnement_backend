@@ -35,7 +35,7 @@ public class DeveloperData implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("I was called");
 
-        // Insert sample customers
+        
         Customer[] customerInstances = {new Customer("john_doe", "password123", "john@example.com", "John", "Doe"),
                 new Customer("jane_smith", "securePass", "jane@example.com", "Jane", "Smith"),
                 new Customer("alice_green", "pass123", "alice@example.com", "Alice", "Green"),
@@ -51,7 +51,7 @@ public class DeveloperData implements ApplicationRunner {
 
         System.out.println("I was called 1");
 
-        // Insert sample cars
+        
         Car[] carInstances = {new Car("Toyota", 25000, "Gasoline", "https://images.unsplash.com/photo-1556890800-47ea175c6fbb?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
                 new Car("Honda", 22000, "Hybrid", "https://images.unsplash.com/photo-1614152204567-04903fff36b0?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
                 new Car("Ford", 28000, "Diesel", "https://images.unsplash.com/photo-1568315698760-1d71a37e3478?q=80&w=3165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
@@ -67,7 +67,7 @@ public class DeveloperData implements ApplicationRunner {
 
         System.out.println("I was called 2");
 
-        // Insert sample subscriptions
+       
         Subscription[] subscriptionInstances = {new Subscription(
                 "2023-01-01", "2023-01-10", "2023-02-10", "2023-01-10",
                 0, 500, 1000, 30, 300, "Location A", "Location B", carInstances[0], customerInstances[0]
@@ -105,7 +105,7 @@ public class DeveloperData implements ApplicationRunner {
 
         System.out.println("I was called 6");
 
-        // Insert sample damages
+       
         Damage[] damageInstances = {new Damage("Scratch on the front bumper", 200, 50, 30, carInstances[0], subscriptionInstances[0]),
                 new Damage("Dent on the driver's side door", 300, 60, 40, carInstances[1], subscriptionInstances[1]),
                 new Damage("Broken taillight", 150, 40, 20, carInstances[2], subscriptionInstances[2]),
